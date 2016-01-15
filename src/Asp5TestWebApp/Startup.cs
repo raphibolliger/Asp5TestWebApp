@@ -38,7 +38,7 @@ namespace Asp5TestWebApp
             if (env.IsDevelopment())
             {
                 // This reads the configuration keys from the secret store.
-                // For more details on using the user secret store see http://go.microsoft.com/fwlink/?LinkID=532709
+                // For more details oDefaultConnectionn using the user secret store see http://go.microsoft.com/fwlink/?LinkID=532709
                 builder.AddUserSecrets();
             }
             builder.AddEnvironmentVariables();
@@ -54,7 +54,7 @@ namespace Asp5TestWebApp
             services.AddEntityFramework()
                 .AddSqlServer()
                 .AddDbContext<ApplicationDbContext>(options =>
-                    options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
+                    options.UseSqlServer(Configuration["Data:AzureSqlServer:ConnectionString"]));
 
             // Add Identity services to the services container.
             services.AddIdentity<ApplicationUser, IdentityRole>()

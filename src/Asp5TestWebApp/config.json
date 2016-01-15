@@ -3,8 +3,11 @@
     "SiteTitle": "Asp5TestWebApp"
   },
   "Data": {
-    "DefaultConnection": {
+    "DefaultConnection":{
       "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-Asp5TestWebApp-32634d3e-6180-4726-bb50-3f214253c693;Trusted_Connection=True;MultipleActiveResultSets=true"
+    },
+    "AzureSqlServer":{
+      "ConnectionString": "Server=tcp:webappraphiosx.database.windows.net,1433;Database=webapposx;User ID=raphibolliger@webappraphiosx;Password={your_password_here};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
     }
   }
 }
