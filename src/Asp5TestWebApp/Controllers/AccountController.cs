@@ -86,8 +86,10 @@ namespace Asp5TestWebApp.Controllers
             // If we got this far, something failed, redisplay form
             return View(model);
         }
-
-        //
+        
+        // Testkommentar
+        
+        // 
         // GET: /Account/Register
         [HttpGet]
         [AllowAnonymous]
